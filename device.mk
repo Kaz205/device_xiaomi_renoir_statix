@@ -25,5 +25,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Rootdir
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.renoir.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.renoir.rc
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/renoir/renoir-vendor.mk)
