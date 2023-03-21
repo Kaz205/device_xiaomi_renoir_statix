@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_renoir.mk
+    $(LOCAL_DIR)/statix_renoir.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_renoir-user \
-    lineage_renoir-userdebug \
-    lineage_renoir-eng
+    statix_renoir-user \
+    statix_renoir-userdebug \
+    statix_renoir-eng
