@@ -16,16 +16,8 @@ TARGET_BOOTLOADER_BOARD_NAME := renoir
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/renoir_QGKI.config
-
-# Kernel modules
-BOOT_KERNEL_MODULES := \
-    focaltech_touch.ko \
-    goodix_core.ko \
-    hwid.ko \
-    msm_drm.ko \
-    xiaomi_touch.ko
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+BOARD_PREBUILT_DTBIMAGE_DIR := $(TARGET_KERNEL_DIR)
+BOARD_PREBUILT_DTBOIMAGE := $(TARGET_KERNEL_DIR)/dtbo.img
 
 # Partitions
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824

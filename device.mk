@@ -16,6 +16,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_shimaidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/sound_trigger_mixer_paths_shimaidp.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/sound_trigger_platform_info.xml
 
+# Kernel
+TARGET_KERNEL_DIR ?= device/xiaomi/renoir-kernel
+TARGET_PREBUILT_KERNEL := $(TARGET_KERNEL_DIR)/Image
+PRODUCT_COPY_FILES += $(TARGET_PREBUILT_KERNEL):kernel
+
+PRODUCT_VENDOR_KERNEL_HEADERS += device/xiaomi/renoir-kernel/kernel-headers
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
