@@ -32,3 +32,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := Xiaomi/renoir_global/renoir:13/TKQ1.220829.002/V14.0.3.0.TKIMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Disable Quick Tap
+DISABLE_COLUMBUS := true
+
+# Enable blurs
+TARGET_USES_BLUR := true
+
+# Enable gameservice
+ENABLE_GAMETOOLS := true
+
+# Google Pixel Launcher
+INCLUDE_PIXEL_LAUNCHER := true
