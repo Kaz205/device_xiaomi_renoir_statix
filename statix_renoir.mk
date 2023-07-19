@@ -33,9 +33,6 @@ BUILD_FINGERPRINT := Xiaomi/renoir_global/renoir:13/TKQ1.220829.002/V14.0.5.0.TK
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Disable Quick Tap
-DISABLE_COLUMBUS := true
-
 # Enable blurs
 TARGET_USES_BLUR := true
 
