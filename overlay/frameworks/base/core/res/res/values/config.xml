@@ -125,6 +125,7 @@
         <item>971.4</item>
         <item>985.7</item>
         <item>1000.0</item>
+        <item>1600.0</item>
     </array>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
@@ -250,7 +251,8 @@
         <item>85000</item>
         <item>90000</item>
         <item>95000</item>
-        <item>100000</item>
+        <item>100000</item> <!-- 5500 lux -->
+        <item>118181</item> <!-- 6500 lux -->
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
@@ -258,6 +260,7 @@
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <array name="config_screenBrightnessBacklight">
         <item>1</item>
+        <item>159</item>
         <item>255</item>
     </array>
 
@@ -270,6 +273,7 @@
     <array name="config_screenBrightnessNits">
         <item>4.5</item>
         <item>1000</item>
+        <item>1600</item>
     </array>
 
     <!-- The maximum range of gamma adjustment possible using the screen
